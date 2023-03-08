@@ -1,0 +1,15 @@
+<div class="contenedorLogin">
+  <div class="formularioLogin">
+    <div class="tituloLogin">
+      <label for="user">Iniciar Sesión</label><br />
+    </div>
+    <div class="containerInput">
+      <input type="text" value="" required="" class="input" #nombreUsuario />
+      <label class="user-label">Usuario</label>
+      <span *ngIf="usuarioNoExiste">El usuario introducido no existe!</span>
+    </div>
+    <div class="containerButton">
+      <button (click)="logearse(nombreUsuario)">Log In</button>
+    </div>
+  </div>
+</div>

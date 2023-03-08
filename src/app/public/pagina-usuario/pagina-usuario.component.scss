@@ -1,0 +1,87 @@
+.contanierUsuario {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../../../assets/image/fondoPantalla3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.botonesFiltros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  );
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  font-family: "Itim";
+  font-size: 30px;
+  label {
+    margin: 1rem;
+  }
+  img {
+    width: 4%;
+    margin: 1rem;
+  }
+}
+table {
+  width: 80%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,th {
+  width: 25%;
+}
+.mat-elevation-z8{
+    background-color: rgba(255, 255, 255, 0.352)
+}
+.containerTabla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.divPaginator {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  background-color: transparent;
+  mat-paginator{
+    background-color: rgba(255, 255, 255, 0.352)
+  }
+}
+.divBoton{
+    display: flex;
+    width: 20%;
+    button{
+        width: 100%;
+        height: 50px;
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+        border: 1px solid rgb(183, 183, 249);
+    }
+    button:hover{
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #d395d3 0%, #79d5df 100%);
+    }
+}
+.filtro{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.693);
+    margin: 1rem;
+
+    mat-form-field{
+        margin-left: 1rem;
+    }
+}
